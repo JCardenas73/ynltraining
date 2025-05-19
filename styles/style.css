@@ -23,6 +23,7 @@ body {
 .process-step {
     position: relative;
     padding-left: 3rem;
+    margin-left: 2rem;
 }
 
 .process-step:before {
