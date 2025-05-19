@@ -1,0 +1,115 @@
+:root {
+    --primary: #000000;
+    --secondary: #ffffff;
+    --accent: #f8f9fa;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+}
+
+.process-step {
+    position: relative;
+    padding-left: 3rem;
+}
+
+.process-step:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: var(--primary);
+}
+
+.process-number {
+    position: absolute;
+    left: -1.5rem;
+    top: 0;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.testimonial-card {
+    border: 1px solid rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.pricing-card {
+    border: 1px solid rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.pricing-card.popular {
+    border: 2px solid var(--primary);
+}
+
+.transform-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.transform-overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    transition: all 0.3s ease;
+    padding: 1rem;
+}
+
+.transform-item:hover .transform-overlay {
+    bottom: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--accent);
+    color: var(--primary);
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.btn-dark:hover {
+    background-color: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+footer {
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
